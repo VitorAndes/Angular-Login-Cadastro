@@ -1,0 +1,83 @@
+.container-input-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 280px;
+    margin: auto;
+    padding: 10px;
+
+    border-radius: 5px;
+    background-color: #34445B;
+    -webkit-box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
+    -moz-box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
+    box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
+    /* border: 1px solid black; */
+}
+
+.input-card form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 300px;
+    color: white;
+}
+
+.input-card form label{
+    margin-right: 235px;
+    margin-bottom: 4px;
+}
+
+.input-card form h1{
+    font-size: bold;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.input-card form input{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+.input-card form input:focus {
+    border: 2px solid #FE5F55;
+    transition: ease-in-out .3s;
+  }
+
+.input-card form .buttons {
+    display: flex;
+}
+
+.input-card form .buttons input{
+    background-color: #dce3ea;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 3px;
+
+   transition: .5s ease-in-out ;
+}
+
+.input-card form .buttons input:hover{
+   border: 1px solid #EBEBFF;
+   background-color: #FE5F55;
+   transition:.3s ease-in-out;
+   cursor: pointer;
+}
+
+.input-card form a{
+    text-decoration: none;
+    color: #EBEBFF;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.input-card form a:hover{
+    color: #FE5F55;
+}
