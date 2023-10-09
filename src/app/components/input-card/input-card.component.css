@@ -2,19 +2,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:500px;
-    height: 280px;
+    position: relative;
+    overflow: hidden;
+
+    width:900px;
+    height: 690px;
     margin: auto;
-    padding: 10px;
+    padding:50px;
 
     border-radius: 5px;
     background-color: #34445B;
     -webkit-box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
     -moz-box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
     box-shadow: -11px 12px 17px 3px rgba(0,0,0,0.39);
-    /* border: 1px solid black; */
+
+    animation: transitionDown .6s ease-in-out, transitionOp .5s ease;
 }
 
+.input-card-img{
+    display: flex;
+    margin-right: 30px;
+}
+
+.input-card-img img{
+    border-radius: 10px;
+    max-width: 600px;
+    /* min-width: 100%;
+    min-height: 100%; */
+    transition: transform .4s ease-in-out;
+}
+
+.input-card-img img:hover{
+   transform: scale(1.1);
+}
+
+.input-card {
+    margin-right: 80px;
+}
 .input-card form{
     display: flex;
     flex-direction: column;
@@ -80,4 +104,24 @@
 
 .input-card form a:hover{
     color: #FE5F55;
+}
+
+@keyframes transitionOp{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes transitionDown{
+    0%,
+    20%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }

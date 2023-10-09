@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    background: rgb(52,68,91);
+    background: rgb(52,68,91) no-repeat;
     background: -moz-linear-gradient(135deg, rgba(52,68,91,1) 37%, rgba(235,235,255,1) 97%);
     background: -webkit-linear-gradient(135deg, rgba(52,68,91,1) 37%, rgba(235,235,255,1) 97%);
     background: linear-gradient(135deg, rgba(52,68,91,1) 37%, rgba(235,235,255,1) 97%);
